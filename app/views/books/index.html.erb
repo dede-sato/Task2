@@ -1,0 +1,33 @@
+<div class="content">
+  <h1>Books</h1>
+
+  <div class="home-table">
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+      </tr>
+      <% @books.each do |b| %>
+        <tr>
+          <td><%= b.title %></td>
+          <td><%= b.body %></td>
+          <td><%= link_to 'Show', book_path(b) %></td>
+          <td><%= link_to 'Edit', edit_book_path(b) %></td>
+          <td><%= link_to 'Destroy',
+                          book_path(b),
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <div class="home-new">
+    <h1>New book</h1>
+    <div class="errors">
+      <%= render 'error_form', locals: { book: @book } %>
+    </div>
+    <%= render 'form' %>
+  </div>
+
+</div>
