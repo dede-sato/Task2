@@ -1,3 +1,10 @@
+/* 全体 */
+body {
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+
 /* successメッセージ */
 .notice {
   color: green;
