@@ -13,6 +13,9 @@ class BooksController < ApplicationController
     if @book.save
       flash[:notice] = 'Book was successfully created.'
       redirect_to book_path(@book)
+    else
+      @books = Book.all.order(created_at: 'desc')
+      render 'index'
     end
   end
 
