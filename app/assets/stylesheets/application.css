@@ -12,7 +12,8 @@ body {
 
 /* リンク移行ボタン */
 .click {
-  color: #333;
+  color: #666;
+  font-size: 13px;
 }
 
 .click:hover {

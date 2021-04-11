@@ -34,6 +34,7 @@ td {
 // 詳細、編集、削除の移行
 .jump {
   color: #000;
+  font-size: 13px;
 
 }
 
@@ -46,4 +47,16 @@ td {
 // formに関するもの
 .form p {
   margin: 0;
+}
+
+// showに関するもの
+.content-s p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+.homeT {
+  font-weight: bold;
 }

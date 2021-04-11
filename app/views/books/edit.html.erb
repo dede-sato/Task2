@@ -2,8 +2,9 @@
   <h1>Editing Book</h1>
   <%= render 'form' %>
   <th>
-    <td><%= link_to 'Show', book_path(@book) %></td>
-    <td><%= link_to 'Back', books_path %></td>
+    <td><%= link_to 'Show', book_path(@book), class:'jump' %></td>
+    <span>|</span>
+    <td><%= link_to 'Back', books_path, class:'click' %></td>
   </th>
 </div>
 
